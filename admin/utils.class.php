@@ -2,8 +2,13 @@
 
 class CUIUtils
 {
-    public static function loadFile($path)
+    public static function loadFile($path, $once = true)
     {
-        include_once(CUI_DIR . $path);
+        if ($once) {
+            include_once(CUI_DIR . $path);
+        } else {
+            include(CUI_DIR . $path);
+        }
+        
     }
 }
