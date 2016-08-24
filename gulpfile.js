@@ -2,12 +2,14 @@ var gulp = require('gulp')
 var babel = require('gulp-babel')
 var sass = require('gulp-sass')
 var browserSync = require('browser-sync').create()
+var concat = require('gulp-concat')
 
 var assetsDirectory = './assets/'
 var distDirectory = './dist/'
 
 var stylesPath = assetsDirectory + 'styles/**/*.scss'
 var jsPath = assetsDirectory + 'js/**/*.js'
+var imagesPath = assetsDirectory + 'images/**/*.{png,jpg,svg}'
 
 gulp.task('watch', function() {
     browserSync.init({
@@ -34,4 +36,9 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream())
 })
 
-gulp.task('default', ['sass', 'js'])
+gulp.task('images', function() {
+    return gulp.src(imagesPath)
+        .pipe(gulp.dest(distDirectory + 'images'))
+})
+
+gulp.task('default', ['sass', 'js', 'images'])
