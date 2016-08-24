@@ -11,4 +11,9 @@ class CUIUtils
         }
         
     }
+
+    public static function getAssetUrl($path)
+    {
+        return CUI_URL . 'dist' . $path;
+    }
 }
