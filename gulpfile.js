@@ -29,6 +29,9 @@ gulp.task('js', function() {
 
 gulp.task('sass', function() {
     return gulp.src(stylesPath)
-        .pipe(gulp.sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest(distDirectory + 'styles'))
+        .pipe(browserSync.stream())
 })
+
+gulp.task('default', ['sass', 'js'])

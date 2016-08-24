@@ -16,9 +16,10 @@ define('CUI_DIR', plugin_dir_path(__FILE__));
 define('CUI_URL', plugin_dir_url(__FILE__));
 define('CUI_PATH', plugin_basename(dirname(__FILE__)));
 
-require_once(CUI_DIR . 'admin/utils.class.php');
+require_once(CUI_DIR . 'lib/utils.class.php');
 
 CUIUtils::loadFile('admin/configuration.class.php');
+CUIUtils::loadFile('lib/frontend.class.php');
 
 CUIUtils::loadFile('shortcodes/cui-block.php');
 CUIUtils::loadFile('shortcodes/cui-interaction.php');
