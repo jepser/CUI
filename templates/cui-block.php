@@ -47,6 +47,16 @@
                     <span class="cui-interaction__footer cui-interaction__footer--enter">Press ENTER</span>
                 </div>
             </div>
+            <div class="cui__interaction cui-interaction cui-interaction--human cui-interaction--answer">
+                <div class="cui-interaction__content">
+                    <div class="cui-interaction__text cui-field cui-field--multiple">
+                        <div class="cui-field__option is-selected">💩</div>
+                        <div class="cui-field__option is-disabled">👄</div>
+                        <div class="cui-field__option">😎</div>
+                    </div>
+                    <span class="cui-interaction__footer cui-interaction__footer--enter">Press ENTER</span>
+                </div>
+            </div>
         </div><!-- .cui__interaction -->
     </div><!-- .cui__block -->
 </div><!-- .cui -->

@@ -24,7 +24,12 @@
 
     @include create-bubble-state('&.is-selected', $bubble-color, $font-main-color);
     @include create-bubble-state('&:hover', $bubble-color-focus, $font-main-color);
-    @include create-bubble-state('&:active', $bubble-color-focus, $font-main-color) {
+    @include create-bubble-state('&.is-disabled', $bubble-color-disabled, $font-main-color) {
+        &:hover {
+            cursor: auto;
+        }
+    }
+    @include create-bubble-state('&:not(.is-disabled):active', $bubble-color-focus, $font-main-color) {
         box-shadow: inset 0 1px 1px 0 rgba(104, 141, 141, .5);
     }
 }
