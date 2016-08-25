@@ -33,6 +33,16 @@
                 <div class="cui-interaction__content">
                     <div class="cui-interaction__text cui-field cui-field--text">
                         <input type="text" class="cui-field__field" placeholder="Type your name here...">
+                        <button class="cui-field__button"><img src="<?= CUIUtils::getAssetUrl('images/send.svg') ?>"></button>
+                    </div>
+                    <span class="cui-interaction__footer cui-interaction__footer--enter">Press ENTER</span>
+                </div>
+            </div>
+            <div class="cui__interaction cui-interaction cui-interaction--human cui-interaction--answer">
+                <div class="cui-interaction__content">
+                    <div class="cui-interaction__text cui-field cui-field--multiple">
+                        <div class="cui-field__option is-selected">I wanna see it!</div>
+                        <div class="cui-field__option">I'm in a flow, let me keep reading!</div>
                     </div>
                     <span class="cui-interaction__footer cui-interaction__footer--enter">Press ENTER</span>
                 </div>

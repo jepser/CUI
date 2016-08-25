@@ -1,0 +1,9 @@
+.cui-field--multiple {
+    @include clearfix;
+    .cui-field__option {
+        @include bubble;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

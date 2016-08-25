@@ -1,6 +1,9 @@
 //routes 
 $assets-path: '../images/';
 
+$base-font: "Avenir Next W01", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$serif: 'Merriweather', serif;
+
 //colors
 $font-main-color: #456867;
 
@@ -11,6 +14,7 @@ $bubble-color: #A9D8D7;
 $bubble-color-focus: #9ECDCC;
 $bubble-color-empty: #8CD4E0;
 $bubble-color-disable: #E6F0F2;
+$bubble-text-color: #70A8B1;
 
 $text-gray: transparentize(#2F414E, .6);
 
@@ -22,4 +26,6 @@ $bubble-height: 36px;
 $bubble-content-margin: 10px;
 $bubble-margin: 20px;
 $bubble-padding: 30px;
+
+$bubble-radius: $bubble-height;
 

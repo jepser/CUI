@@ -1,5 +1,6 @@
 .cui-interaction {
     margin-bottom: $bubble-margin;
+    clear: both;
     &__avatar {
         margin-right: $bubble-content-margin;
         float: left;
@@ -22,6 +23,8 @@
         font-size: 11px;
         line-height: 1;
         color: $text-gray;
+        font-family: $base-font;
+        font-weight: 500;
     }
 }
 
@@ -30,6 +33,7 @@
         margin-left: $bubble-content-margin + $avatar-size;
         font-size: 17px;
         line-height: 30px;
+        font-family: $serif;
     }
     .cui-interaction__text {
         margin-bottom: 0;
@@ -47,5 +51,5 @@
     .cui-interaction__footer--enter {
         padding-left: 15px;
         background: url(get-asset('enter.svg')) no-repeat left center;
-    }   
+    }  
 }
