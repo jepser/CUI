@@ -1,0 +1,3 @@
+@function get-asset($path) {
+    @return $assets-path + $path;
+}

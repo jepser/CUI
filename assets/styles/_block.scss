@@ -1,3 +1,5 @@
 .cui {
-    
+    width: 100%;
+    max-width: $container-width;
+    @include clearfix;    
 }

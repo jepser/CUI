@@ -1,0 +1,14 @@
+.cui-field--text {
+    width: 271px;
+    border-bottom: 1px solid $border-color;
+    .cui-field__field {
+        background: transparent;
+        border: 0;
+        padding: 0;
+        font-weight: 300;
+        @include placeholder {
+            color: $text-gray;
+            font-weight: 300;
+        }
+    }
+}

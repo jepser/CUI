@@ -1,0 +1,51 @@
+.cui-interaction {
+    margin-bottom: $bubble-margin;
+    &__avatar {
+        margin-right: $bubble-content-margin;
+        float: left;
+    }
+    &__content {
+        @include clearfix;
+    }
+    &__text {
+        margin-bottom: $bubble-content-margin;
+        p:last-child {
+            margin: 0;
+        }
+    }
+    &__name {
+        font-weight: bold;
+        float: left;
+        margin-right: $bubble-content-margin / 2;
+    }
+    &__footer {
+        font-size: 11px;
+        line-height: 1;
+        color: $text-gray;
+    }
+}
+
+.cui-interaction--default {
+    .cui-interaction__content {
+        margin-left: $bubble-content-margin + $avatar-size;
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .cui-interaction__text {
+        margin-bottom: 0;
+    }
+}
+
+.cui-interaction--human {
+    float: right;
+    .cui-interaction__footer {
+        text-align: right;
+        float: right;
+    }
+}
+.cui-interaction--answer {
+    .cui-interaction__footer--enter {
+        padding-left: 15px;
+        background: url(get-asset('enter.svg')) no-repeat left center;
+    }   
+}

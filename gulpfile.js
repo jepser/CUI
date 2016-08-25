@@ -17,9 +17,15 @@ gulp.task('watch', function() {
         port: 7000
     })
 
-    gulp.watch(stylesPath, ['sass'])
-    gulp.watch(jsPath, ['js']).on('change', browserSync.reload)
-    gulp.watch(['./**/*.php']).on('change', browserSync.reload)
+    gulp.watch(stylesPath, {
+        cwd: './'
+    }, ['sass'])
+    gulp.watch(jsPath, ['js'], {
+        cwd: './'
+    }).on('change', browserSync.reload)
+    gulp.watch(['./**/*.php'], {
+        cwd: './'
+    }).on('change', browserSync.reload)
 })
 
 gulp.task('js', function() {

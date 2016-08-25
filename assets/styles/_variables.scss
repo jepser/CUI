@@ -1,3 +1,5 @@
+//routes 
+$assets-path: '../images/';
 
 //colors
 $font-main-color: #456867;
@@ -11,3 +13,13 @@ $bubble-color-empty: #8CD4E0;
 $bubble-color-disable: #E6F0F2;
 
 $text-gray: transparentize(#2F414E, .6);
+
+//dimensions
+$container-width: 560px;
+$avatar-size: 30px;
+
+$bubble-height: 36px;
+$bubble-content-margin: 10px;
+$bubble-margin: 20px;
+$bubble-padding: 30px;
+

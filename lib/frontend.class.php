@@ -5,6 +5,7 @@ class CUIFrontend
     public static function registerDependencies()
     {
         add_action('wp_enqueue_scripts', ['CUIFrontend', 'registerScripts']);
+        add_action('wp_enqueue_scripts', ['CUIFrontend', 'registerStyles']);
     }
     public static function registerScripts()
     {
@@ -13,6 +14,7 @@ class CUIFrontend
     }
     public static function registerStyles()
     {
+        wp_enqueue_style('cui/app', CUIUtils::getAssetUrl('styles/app.css'));
     }
 }
 
