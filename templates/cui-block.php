@@ -1,4 +1,4 @@
-<div class="cui">
+<div class="cui" data-scroll>
     <div class="cui__block">
         <div class="cui__interactions">
             <div class="cui__interaction cui-interaction cui-interaction--default">
